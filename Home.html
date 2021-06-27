@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sites de Receitas</title>
+	<!-- Links -->
+	<!-- Css e JavaScript -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="#"></script>
+	<!-- Bootstrap e Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Mostrar a Barra de navegação -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Largura da Barra de Navegação -->
+	<style> 
+    	.modal {
+        	width: 300px;
+      	}
+
+      	.modal-dontent {
+        	width: 300px;
+      	}
+
+        .list-group-item:hover {
+          	background-color: #222222;
+        }
+    </style>
+</head>
+<body id="Fundo"><!-- "Fundo" é o backgound da página -->
+	<!-- Barra de navegação Código -->
+	<nav class="navbar navbar-light bg-light shadow">
+		<button class="navbar-toggler" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+ 			<span class="navbar-toggler-icon"></span>
+ 		</button>
+  		<div class="container-fluid">
+    		<span class="navbar-brand mb-0 h1">Menu</span>
+  		</div>
+	</nav>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-fullscreen">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="exampleModalLabel">MENU</h5>
+        			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">fechar</button>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <div class="modal-body">
+    	<!-- Links Internos -->
+      	<ul class="list-group list-group-flush">	
+	   		<li class="list-group-item">
+	  			<a href="#">Destaques</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Bolos">Bolos</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Sobremesas">Sobremesas</a>
+	 	 	</li>
+	  		<li class="list-group-item">
+	  			<a href="#Rapidos">Pratos Rápidos</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Tortas">Tortas doces e salgadas</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Veganas">Receitas Veganas</a>
+	 		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Italiana">Comidas italianas</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Brasileiras">Comidas Brasileiras</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Japonesa">Comida japonesa</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Mediterranea">Mediterrânea</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Francesa">Francesa</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Lanches">Lanches</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="#Cafe">Café da manhã</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="formulario.html">Deixe sua sugestão de receita</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="cadastro.html">
+	  				<span class="far fa-user"></span> cadastrar
+	  			</a>
+	  		</li>
+	  		<li class="list-group-item">
+	  			<a href="login.html">
+	  				<span class="fas fa-sign-out-alt"></span> entrar
+	  			</a>
+	  		</li>
+	  		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</ul>
+	</div>
+	<!-- Acho que ícone de fechamento e cadastro Font Awesome -->
+	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+    <!--Container com as páginas -->
+    <div class="container">
+    	<!-- "titulos" é a class para estilização dos titulos de cada página-->
+    	<!-- "imagem" é a class para a estilização das imagens -->
+    	<!-- "descricao" é a class para a estilização das descrições das receitas que aparecerão no index -->
+    	<!-- "link" é a class para a estilização do 'ver mais' das receitas -->
+    	<!-- "botao" é class para estilização do botão comprar -->
+					    		<!-- ... -->
+					    	<!--Página Bolos-->
+					    		<!-- ... --->
+    	<div id="Bolos">               
+	  		<h1 class="titulos">Bolos</h1>
+	  		<hr>
+	  		<div class="row">
+	  		<div class="col-sm">
+	  			<img src="img/receita01.png" class="imagem">
+	  			<br>
+	  			<p class="descricao">Bolo Simples</p>
+	  			<a href="receita1.html" class="link">Ver mais</a>
+	  		    <button class="botao" type="submit">Comprar</button>
+	  		</div>
+	  		<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita02.png" class="imagem">
+  					<br>
+  					<p class="descricao">Bolo de fubá</p>
+  			 		<a href="receita2.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita03.png" class="imagem">
+  					<br>
+  					<p class="descricao">Bolo de fubá sem leite</p>
+  			 		<a href="receita3.html" class="link">Ver mais</a>
+  			 		<button class="botao" type="sumbmit">Comprar</button>
+  			 	</div>
+  			</div>
+  			<div class="row">
+  		    	<div class="col-sm">
+  					<img src="img/receita04.png" class="imagem">
+  					<br>
+  					<p class="descricao">Bolo bomba de chocolate</p>
+  			 		<a href="receita4.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita05.png" class="imagem">
+  					<br>
+  					<p class="descricao">Bolo de coco invertido</p>
+  			 		<a href="receita5.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  	  		</div>
+	  	</div>
+						  		   <!-- ... -->
+						  	<!-- Página Sobremesas -->
+						  		   <!-- ... -->	
+	  	<div id="Sobremesas">
+	  		<h1 class="titulos">Sobremesas</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+	  				<img src="img/receita06.png" class="imagem">
+	  				<br>
+	  				<p class="descricao">Sobremesa cremosa rápida e fácil</p>
+	  			 	<a href="receita6.html" class="link">Ver mais</a>
+	  		     	<button class="botao" type="sumbmit">Comprar</button>
+	  		    </div>
+			</div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita07.png" class="imagem">
+  					<br>
+  					<p class="descricao">Sobremesa rápida que não vai ao forno</p>
+	  				<a href="receita7.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita08.png" class="imagem">
+  					<br>
+  					<p class="descricao">Sobremesa de liquidificador</p>
+  			 		<a href="receita8.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row"> 	
+  		    	<div class="col-sm">
+  					<img src="img/receita09.png" class="imagem">
+  					<br>
+  					<p class="descricao">Mousse rápido</p>
+  			 		<a href="receita9.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div> 	
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita10.png" class="imagem">
+  					<br>
+  					<p class="descricao">Marido gelado</p>
+  			 		<a href="receita10.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+	  	</div>
+						  			<!-- ... -->
+						  	<!-- Página Pratos Rápidos -->
+						  			<!-- ... -->
+		<div id="Rapidos">
+			<h1 class="titulo">Pratos Rapidos</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita11.png" class="imagem">
+  					<br>
+  					<p class="descricao">Janta em 7 minutos</p>
+  			 		<a href="receita11.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita12.png" class="imagem">
+  					<br>
+  					<p class="descricao">Omelete espanhola</p>
+  			 		<a href="receita12.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita13.png" class="imagem">
+  					<br>
+  					<p class="descricao">Jantar rápido e delicioso</p>
+  			 		<a href="receita13.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row"> 	
+  		    	<div class="col-sm">
+  					<img src="img/receita14.png" class="imagem">
+  					<br>
+  					<p class="descricao">Ovos a parmegiana</p>
+  			 		<a href="receita14.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita15.png" class="imagem">
+  					<br>
+  					<p class="descricao">Lanche rápido e fácil na frigideira</p>
+  			 		<a href="receita15.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		  	</div>
+		</div>
+									<!-- ... -->
+							<!-- Tortas Doces & Salgadas -->
+									<!-- ... -->
+		<div id="Tortas">
+			<h1 class="titulo">Tortas Doces e Salgadas</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita16.png" class="imagem">
+  					<br>
+  					<p class="descricao">Torta de liquidificador</p>
+  			 		<a href="receita16.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita17.png" class="imagem">
+  					<br>
+  					<p class="descricao">Torta de frango rápida e fácil</p>
+  			 		<a href="receita17.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita18.png" class="imagem">
+  					<br>
+  					<p class="descricao">Torta de carne moída</p>
+  			 		<a href="receita18.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		    	<div class="col-sm">
+  					<img src="img/receita19.png" class="imagem">
+  					<br>
+  					<p class="descricao">Torta de calabresa</p>
+  			 		<a href="receita19.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita20.png" class="imagem">
+  					<br>
+  					<p class="descricao">Torta de hambúrguer</p>
+  			 		<a href="receita20.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  	  		</div>
+		</div>
+									  <!-- ... -->
+								<!-- Receitas Veganas -->
+									  <!-- ... -->
+		<div id="Veganas">
+			<h1 id="titulo">Veganos</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita21.png" class="imagem">
+  					<br>
+  					<p class="descricao">Estrogonofe vegetariano</p>
+  			 		<a href="receita21.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita22.png" class="imagem">
+  					<br>
+  					<p class="descricao">Batata rösti</p>
+  			 		<a href="receita22.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita23.png" class="imagem">
+  					<br>
+  					<p class="descricao">Nhoque de brócolis com queijo</p>
+  			 		<a href="receita23.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row"> 	
+  		    	<div class="col-sm">
+  					<img src="img/receita24.png" class="imagem">
+  					<br>
+  					<p class="descricao">Sanduíche de jaca louca</p>
+  			 		<a href="receita24.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita25.png" class="imagem">
+  					<br>
+  					<p class="descricao">Rolinho de berinjela recheado com queijo</p>
+  			 		<a href="receita25.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  	  		</div>
+		</div>
+									<!-- ... -->
+							<!-- Culinária Italiana -->
+									<!-- ... -->
+		<div id="Italiana">
+			<h1 class="titulo">Comidas Italianas</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita26.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Lasanha à Bolonhesa</p>
+  			 		<a href="receita26.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita27.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Pizza</p>
+  			 		<a href="receita27.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita28.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Bistecca alla Fiorentina</p>
+  			 		<a href="receita28.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita29.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Macarrão à Bolonhesa (Tagliatelle al ragu)</p>
+  			 		<a href="receita29.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita30.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Risoto, o pequeno arroz (Risotto)</p>
+  			 		<a href="receita30.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita31.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Ossobuco</p>
+  			 		<a href="receita31.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita32.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Cacio e pepe (macarrão com queijo e pimenta)</p>
+  			 		<a href="receita32.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita33.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Gelato</p>
+  			 		<a href="receita33.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita34.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Tiramisu</p>
+  			 		<a href="receita34.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  	  		</div>
+		</div>
+									<!-- ... -->
+							<!-- Culinária Brasileira -->
+									<!-- ... --> 
+		<div id="Brasileira">
+			<h1 class="titulo">Comidas Brasileiras</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita35.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Feijoada</p>
+  					<a href="receita35.html" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita36.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita37.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita38.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita40.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita41.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita42.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  			 		<button class="botao" type="sumbmit">Comprar</button>
+  			 	</div>
+  			</div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita43.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita44.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita45.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  	  			</div>
+  	  		</div>
+		</div>
+										<!-- ... -->
+								<!-- Culinária Japonesa -->
+										<!-- ... -->	
+		<div id="Japonesa">
+			<h1 class="titulo">Comidas japonesa</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita46.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita47.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita48.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita49.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita50.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  				</div>    
+  	  		</div>
+		</div>					
+										<!-- ... -->
+								<!-- Culinária Mediterranea -->
+										<!-- ... -->
+		<div id="Mediterranea">
+			<h1 class="titulo">Comida Mediterrânea</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita51.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita52.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita53.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita54.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+        	<div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita55.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  	  		</div>
+		</div>
+										<!-- ... -->
+								<!-- Culinária Francesa -->
+										<!-- ... -->	
+		<div id="Francesa">
+			<h1 class="titulo">Comidas Francesa</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita56.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita57.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita58.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="img/receita59.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita60.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+		</div>
+									  <!-- ... -->
+									<!-- Lanches -->
+									  <!-- ... -->
+		<div id="Lanches">
+			<h1 id="titulo">Lanches</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="img/receita61.jpg" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  					<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  					<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		     </div>
+		</div>
+									 <!-- ... -->
+									<!-- Cafe -->
+									 <!-- ... -->
+		<div id="Cafe">
+			<h1 class="titulo">Café da Manhã/Tarde</h1>
+  			<hr>
+  			<div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  		     	<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+  		    <div class="row">
+  				<div class="col-sm">
+  					<img src="#" class="imagem">
+  					<br>
+  					<p class="descricao">Descrição da receita</p>
+  			 		<a href="#" class="link">Ver mais</a>
+  		     		<button class="botao" type="sumbmit">Comprar</button>
+  		     	</div>
+  		    </div>
+		</div>
+	</div>
+</body>
+</html>
