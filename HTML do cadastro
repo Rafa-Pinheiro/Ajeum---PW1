@@ -1,0 +1,35 @@
+<main class="containerc">
+  <h2>Cadastro</h2>
+  <form action="">
+    <div class="input-field">
+      <input type="text" name="username" id="username" placeholder="insira seu Email">
+      <div class="underline"></div>
+    </div>
+    <div class="input-field">
+      <input type="password" name="password" id="password" placeholder="Insira sua senha">
+      <div class="underline"></div>
+    </div>
+     <div class="input-field">
+      <input type="password" name="password" id="password" placeholder="confirme sua senha">
+      <div class="underline"></div>
+    </div>
+    <input type="submit" value="continue">
+  </form>
+  <div class="footer">
+     <span>Or Connect With Social Media</span>
+       <div class="social-fields">
+  <div class="social-field twitter">
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+              Cadastrar com Twitter
+                </a>
+          </div>
+          <div class="social-field facebook">
+              <a href="#">
+               <i class="fab fa-facebook-f"></i>
+              Cadastrar com Facebook
+               </a>
+             </div>
+            </div>
+        </div>
+</main>
