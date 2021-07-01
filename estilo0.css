@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+						/* Editando o posicionamento dos elementos */
+
+.container {
+	position: relative;
+	width: 80vw;
+	height: 80vh;
+	margin: auto;
+	padding: 2px;
+}
+
+.imagem{
+	height: 65vh;
+	width: 45vw;
+	border-radius: 1vw;
+	position: relative;
+	left: 22.5%;
+	right: 22.5%;
+	border-style: groove;
+}
+
+.link {
+	position: relative;
+	left: 43%;
+	text-decoration: none;
+	color: #4b3621;
+	font-size: 3vh;
+	font-family: 'Merienda', cursive;
+}
+
+.botao {
+	position: relative;
+	left: 44%;
+	font-size: 3vh;
+	font-family: 'Merienda', cursive;
+}
+						/* Editando os Textos do site */
+.titulos {
+	text-align: center;
+	font-family: 'Bahiana', cursive;
+	font-size: 13vh;
+}
+
+.nomereceita {
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	font-size: 8vh;
+	padding-top: 3vh;
+	padding-bottom: 2vh;
+}
+
+#tituloreceita {
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	font-size: 8vh;
+}
+
+.descricao {
+	font-family: 'Merienda', cursive;
+	font-size: 3vh;
+	text-align: center;
+	padding-top: 2vh;
+}
+
+						/* editando a barra de navegação */
+.list-group-item {
+	font-family: 'Lobster Two', cursive;
+	font-size: 3.3vh;
+}
+
+.list-group-item a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.list-group-item a:hover {
+	text-decoration: underline;
+	font-size: 3.5vh;
+	color: #ffbd59;
+}
+
+.modal {
+    max-width: 300px;
+}
+
+.modal-dontent {
+    max-width: 300px;
+}
+
+.list-group-item:hover {
+	background-color: #4b3621;
+}
+
+						/* editando o fundo das páginas */
+#fundo {
+	background-image: url("img/fundo1.jpg"), url("img/fundo2.jpg");
+	background-repeat: repeat-y,repeat-y;
+	background-position: left 0, right 0;
+}
