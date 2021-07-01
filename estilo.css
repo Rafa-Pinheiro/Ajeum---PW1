@@ -1,19 +1,18 @@
-/* editando a barra de navegação */
-
 body, html {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	background-color:#26394E ;
 }
+
+						/* Barra de Navegação */
 
 #menu {
 	height: 100%;
 	position: fixed;
-	background-color: #FED057;
-	width: 300px;
-	transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+	background-color: rgba(75, 54, 33, 0.3);
+	width: 25vw;
+	transition: 1000ms all cubic-bezier(206, 209, 202, 1.0);
 	transform: translateX(-100%);
 	left: 60px;
 }
@@ -40,7 +39,7 @@ body, html {
 
 #blob-path {
 	height: 100%;
-	fill:  #FED057;
+	fill:  rgba(0, 0, 0, 0.5);
 }
 
 .hamburger {
@@ -54,7 +53,7 @@ body, html {
 .hamburger .line {
 	width: 100%;
 	height: 4px;
-	background-color: #fff;
+	background-color: #ced1ca;
 	position: absolute;
 }
 
@@ -67,28 +66,153 @@ body, html {
 	bottom: 0;
 }
 
-h1 {
-	position: fixed;
-	right: 0;
-	margin: 0;
-}
-
 ul {
 	padding: 0;
 	list-style: none;
 	width: 80%;
-	margin-left: 10%;
+	margin-left: 2%;
+	display: block;
 	position: absolute;
 	top: 10px;
 }
 
-ul li {
+
+ul li a {
 	color: #fff;
-	font-family: sans-serif;
-	padding: 20px 0;
+	font-family: 'Lobster Two', cursive;
+	font-size: 1.6vw;
+	text-decoration: none;
+	padding-bottom: 3vh;
 }
 
+ul li a:hover {
+	color: #EEE9E9;
+	font-family: 'Lobster Two', cursive;
+	font-size: 1.8vw;
+	text-decoration: underline;
+}
+
+						/* Página Cadastro*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+main.containerc{
+	background: #ffffff;
+	max-width: 350px;
+	max-height: 40vh;
+	padding: 2rem;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+}
+
+
+main h2{
+	font-weight: 600;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+main h2::before {
+	content: '';
+	position: absolute;
+	height: 4px;
+	width: 25px;
+	bottom: 3px;
+	left: 0;
+	border-radius: 8px;
+	background: linear-gradient(45deg, #6f4e37, #ffff00);
+
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+.input-field{
+	position: relative;
+}
+
+.input-field input{
+	outline: none;
+	font-size: 0.9rem;
+	color: rgba(0,0,0,0.7);
+}
+
+form input[type="submit"]{
+	margin-top: 1rem;
+	padding: 0.2rem;
+	background: linear-gradient(to left, #6f4e37 ,#ffff00 );
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 0.9rem;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	position: relative;
+	left: 35%;
+	font-family: 'Merienda', cursive;
+}
+
+.input-field {
+	position: relative;
+	left: 10%;
+}
+
+#cadastro {
+	position: relative;
+	left: 40%;
+	width: 20%;
+	top: 5rem;
+	font-family: 'Merienda', cursive;
+}
+
+.footer span{
+	color: #000000;
+	font-size: 0.7rem;
+	font-style: bold;
+	text-align: center;
+	font-family: 'Merienda', cursive;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: 'Merienda', cursive;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.twitter {
+	position: relative;
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    width: 15vw;
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    position: relative;
+    width: 15vw;
+}
 		
+
 						/* Editando o posicionamento dos elementos */
 
 .container {
@@ -99,14 +223,38 @@ ul li {
 	padding: 2px;
 }
 
+.container hr {
+	position: relative;
+	margin-left: 22vw;
+	margin-right: 20vw;
+}
+
+#espaco {
+	position: relative;
+	width: 80vw;
+	height: 100vh;
+	margin-right: 20%;
+	margin-left: 33%;
+	margin-top: 7%;
+	padding-bottom: 1vh;
+	font-family: 'Merienda', cursive;
+}
+
 .imagem{
-	height: 65vh;
+	height: 60vh;
 	width: 45vw;
 	border-radius: 1vw;
 	position: relative;
-	left: 22.5%;
-	right: 22.5%;
+	left: 19vw;
+	right: 22.5vw;
 	border-style: groove;
+}
+
+.logo {
+	height: 40vh;
+	width: 20vw;
+	position: relative;
+	left: 31vw;
 }
 
 .link {
@@ -118,38 +266,156 @@ ul li {
 	font-family: 'Merienda', cursive;
 }
 
+
+
 .botao {
 	position: relative;
-	left: 44%;
+	left: 43%;
+	width: 15vh;
 	font-size: 3vh;
 	font-family: 'Merienda', cursive;
+	margin-bottom: 3vh;
+	text-decoration-color: #fff;
+	background-color: rgba(75, 54, 33, 0.8);
+	border-radius: 2vh;
 }
+
+#botoes {
+	position: relative;
+	left: 45px;
+	top: 10px;
+	bottom: 10px;
+	font-family: 'Merienda', cursive;
+	border-radius: 2vh;
+}
+
+.text-center {
+	position: relative;
+	top: 10px;
+	font-family: 'Merienda', cursive;
+
+}
+
+.video {
+	position: relative;
+	left: 20vw;
+	border-radius: 2vw;
+}
+
+						/* Estilização do Formulário */
+
+#formulario {
+	position: relative;
+}
+
+#botaoo {
+	position: relative;
+	width: 15vw;
+	left: 33vw;
+	margin-bottom: 3vh;
+	border-radius: 2vh;
+	background-color: rgba(75, 54, 33, 0.8);
+
+}
+
+.campo {
+	position: relative;
+	left: 33vw;
+}
+
+#espacoform {
+	position: relative;
+	left: -7vw;
+}
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, select, textarea, button {
+    font-family: 'Merienda', cursive;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.campo {
+    margin-bottom: 1em;
+    font-family: 'Merienda', cursive;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+
 						/* Editando os Textos do site */
 .titulos {
 	text-align: center;
 	font-family: 'Bahiana', cursive;
-	font-size: 13vh;
+	font-size: 15vh;
+	border-bottom: solid 1vh;
+	border-width: 0.2vw;
+	border-color: #ffbd59;
+	margin-left: 19vw;
+	margin-right: 18vw;
 }
 
 .nomereceita {
+	position: relative;
 	text-align: center;
 	font-family: 'Lobster Two', cursive;
 	font-size: 8vh;
 	padding-top: 3vh;
 	padding-bottom: 2vh;
+	margin-left: 21vw;
+	margin-right: 18vw;
 }
 
 #tituloreceita {
+	position: relative;
 	text-align: center;
 	font-family: 'Lobster Two', cursive;
 	font-size: 8vh;
+	margin-left: 18vw;
+	margin-right: 18vw;
+}
+
+.topicos {
+	position: relative;
+	font-family: 'Lobster Two', cursive;
+	font-size: 4vh;
+	text-align: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	margin-left: 15vw;
+	margin-right: 15vw;
 }
 
 .descricao {
-	font-family: 'Merienda', cursive;
-	font-size: 3vh;
+	position: relative;
+	font-family: 'Lobster Two', cursive;
+	font-size: 3.3vh;
 	text-align: center;
 	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-left: 18vw;
+	margin-right: 15vw;
+}
+
+
+						/* editando o fundo das páginas */
+#fundo {
+	background-image: url("img/fundo.jpg");
+	background-repeat: repeat-y,repeat-y;
+	background-position: left 0, right 0;
+	background-size: cover;
 }
 
 						
